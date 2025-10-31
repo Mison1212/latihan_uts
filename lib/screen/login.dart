@@ -10,30 +10,52 @@ class login extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.all(20.0),
           child:Center(
-          child: const Column(
+          child: Column(
             children: [
-              SizedBox(height: 10),
-              Icon(
+              const SizedBox(height: 10),
+              const Icon(
                 Icons.lock_outline,
                 size: 100,
                 color: Colors.green
               ),
-              SizedBox(height: 10),
-              Text('Selamat Datang',
+              const SizedBox(height: 10),
+              const Text('Selamat Datang',
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
               ),
               ),
-              SizedBox(height: 5),
+              const SizedBox(height: 5),
 
-              Text('Silahkan masuk untuk melanjutkan',
+              const Text('Silahkan masuk untuk melanjutkan',
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.green,
               ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
+
+              TextField(
+                keyboardType: TextInputType.emailAddress,
+                decoration: InputDecoration(
+                  labelText: 'Email',
+                  hintText: 'Masukkan Email Anda',
+                  prefixIcon: const Icon(Icons.email_outlined),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: const BorderSide(color: Colors.grey),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: const BorderSide(
+                      color:Colors.blue,width: 2
+                    ),
+                  ),
+                ),
+              )
             ],
           ),
           ),
