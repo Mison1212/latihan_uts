@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 // shortcut yang digunakan: stl + Enter
-class SplashScreen1 extends StatelessWidget {
-  const SplashScreen1({super.key});
+class SplashScreen3 extends StatelessWidget {
+  const SplashScreen3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class SplashScreen1 extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: Colors.yellow,
                 image: DecorationImage(
-                  image: AssetImage("assets/images/logo.jpg"),
+                  image: AssetImage("assets/images/village-9779463_640.png"),
                   fit: BoxFit.cover,
                 ),
               ),

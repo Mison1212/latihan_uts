@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:latihan_uts/screen/splash_screen_3.dart';
 
 // shortcut yang digunakan: stl + Enter
-class SplashScreen1 extends StatelessWidget {
-  const SplashScreen1({super.key});
+class SplashScreen2 extends StatelessWidget {
+  const SplashScreen2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,7 @@ class SplashScreen1 extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: Colors.yellow,
                 image: DecorationImage(
-                  image: AssetImage("assets/images/logo.jpg"),
+                  image: AssetImage("assets/images/girl-8703774_640.png"),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -83,12 +84,16 @@ class SplashScreen1 extends StatelessWidget {
 
             SizedBox(height: 20),
            Container(
-            margin: const EdgeInsets.only(left: 20, right: 20),
+            margin: const EdgeInsets.only(left: 40, right: 40),
             child: SizedBox(
               height: 40,
               width: double.infinity,
               child: ElevatedButton(onPressed: (){
                 // todo call next pages
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context)=> SplashScreen3()),
+                );
 
               },
               style: ElevatedButton.styleFrom(
