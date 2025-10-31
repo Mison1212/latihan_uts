@@ -12,6 +12,7 @@ class login extends StatelessWidget {
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
+              
               children: [
                 const SizedBox(height: 10),
                 const Icon(Icons.lock_outline, size: 100, color: Colors.green),
@@ -50,7 +51,7 @@ class login extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(height: 50),
+                const SizedBox(height: 30),
 
                 TextField(
                   obscureText: true,
@@ -85,21 +86,50 @@ class login extends StatelessWidget {
                     ),
                   ),
                 ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue,
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    elevation: 2,
-                  ),
-                  child: const Text(
-                    'Login',
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                  ),
+                  const SizedBox(height: 30),
+
+               ElevatedButton(
+      onPressed: () {},
+      style: ElevatedButton.styleFrom(
+        backgroundColor: Colors.blue[700],
+        padding: const EdgeInsets.symmetric(vertical: 15),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+        ),
+        elevation: 2,
+      ),
+      child: const Text(
+        'Login',
+        style: TextStyle(
+          fontSize: 18,
+          color: Colors.white,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+    ),
+                const SizedBox(height: 30),
+
+                Row(
+                  children: [
+                    Expanded(child: Divider(color: Colors.grey[300])),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Text('atau',
+                      style: TextStyle(color: Colors.grey[600])),
+                       ),
+                       Expanded(child: Divider(color: Colors.grey[300])),
+                  ],
+                ),
+                  const SizedBox(height: 20),
+
+                OutlinedButton.icon(onPressed: (){},
+                icon: Icon(Icons.g_mobiledata, color: Colors.grey[800]),
+                label: Text('Login dengan Google', style: TextStyle(color: Colors.blue[20])),
+                style: OutlinedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
+                  side: BorderSide(color: Colors.grey[300]!),
+                ),
                 ),
               ],
               
