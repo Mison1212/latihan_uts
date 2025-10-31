@@ -16,7 +16,6 @@ class SplashScreen1 extends StatelessWidget {
           children: [
             const SizedBox(height: 50),
 
-            // TODO: Membuat Image bulat
             Container(
               width: 250,
               height: 250,
@@ -32,7 +31,6 @@ class SplashScreen1 extends StatelessWidget {
 
             const SizedBox(height: 30),
 
-            // TODO: Membuat Title dengan warna hitam
             const Text(
               'Welcome',
               style: TextStyle(fontSize: 10, fontWeight: FontWeight.normal),
@@ -40,7 +38,6 @@ class SplashScreen1 extends StatelessWidget {
 
             const SizedBox(height: 8),
 
-            // TODO: Membuat Subtitle
             Text(
               'Forgot to bring your wallet when you are shoping?',
               style: TextStyle(fontSize: 12, color: Colors.green),
@@ -48,7 +45,6 @@ class SplashScreen1 extends StatelessWidget {
 
             const SizedBox(height: 30),
 
-            // TODO: Membuat 3 bullet kecil (. mulai dari warna terang diawal)
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
