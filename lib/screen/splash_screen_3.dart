@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:latihan_uts/screen/login.dart';
 
 // shortcut yang digunakan: stl + Enter
 class SplashScreen3 extends StatelessWidget {
@@ -83,12 +84,16 @@ class SplashScreen3 extends StatelessWidget {
 
             SizedBox(height: 20),
            Container(
-            margin: const EdgeInsets.only(left: 20, right: 20),
+           margin: const EdgeInsets.only(left: 40, right: 40),
             child: SizedBox(
               height: 40,
               width: double.infinity,
               child: ElevatedButton(onPressed: (){
                 // todo call next pages
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context)=> login()),
+                );
 
               },
               style: ElevatedButton.styleFrom(
